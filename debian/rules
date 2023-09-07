@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+# You must remove unused comment lines for the released package.
+#export DH_VERBOSE = 1
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+%:
+	dh $@
+
+#override_dh_prep:
+#	dh_prep
+
+#override_dh_auto_install:
+#	dh_auto_install -- prefix=/usr
+
+override_dh_install:
+	mkdir -p debian/tmp
+	wget -c "https://www.mojedatovaschranka.cz/sds/datafile?format=xsd&service=seznam_ds"     -O debian/tmp/seznam_ds.xml
+	wget -c "https://www.mojedatovaschranka.cz/sds/datafile?format=xml&service=seznam_ds_po"  -O debian/tmp/seznam_ds_po.xml
+	wget -c "https://www.mojedatovaschranka.cz/sds/datafile?format=xml&service=seznam_ds_pfo" -O debian/tmp/seznam_ds_pfo.xml
+	wget -c "https://www.mojedatovaschranka.cz/sds/datafile?format=xml&service=seznam_ds_ovm" -O debian/tmp/seznam_ds_ovm.xml
+	dh_install

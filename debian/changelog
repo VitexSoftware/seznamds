@@ -1,0 +1,6 @@
+seznamds (2023.9.7) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Thu, 07 Sep 2023 16:55:21 +0200
