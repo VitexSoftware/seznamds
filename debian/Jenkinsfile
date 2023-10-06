@@ -22,7 +22,7 @@ node() {
 distributions.each {
     distribution = it
 
-    println  'Dist:' + distribution
+    println  "Dist:" + distribution
 
     def dist = distribution.split(':')
     //      distroFamily = dist[0]
@@ -34,11 +34,12 @@ distributions.each {
         ansiColor('xterm') {
             stage('Checkout ' + distribution) {
                 buildImage = docker.image(vendor + '/' + distribution)
-                sh 'git checkout debian/changelog'
-
-                // Set version by year.month.day programmatically
-                def version = new Date().format('y.M.d')
-                ver = version + '~' + distroCodename + '~' + env.BUILD_NUMBER
+		sh 'git checkout debian/changelog'
+                def version = sh (
+                    script: 'dpkg-parsechangelog --show-field Version',
+                    returnStdout: true
+                ).trim()
+                ver = version + '.' + env.BUILD_NUMBER  + '~' + distroCodename
             }
             stage('Build ' + distribution) {
                 buildImage.inside {
