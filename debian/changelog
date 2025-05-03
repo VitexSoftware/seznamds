@@ -1,6 +1,13 @@
-seznamds (2023.9.7) UNRELEASED; urgency=low
+seznamds (2025.5.3) UNRELEASED; urgency=medium
 
+  * Build for modern platforms
+
+ -- vitex <info@vitexsoftware.cz>  Sat, 03 May 2025 18:51:59 +0200
+
+seznamds (2023.9.7) unstable; urgency=low
+
+  [ Vítězslav Dvořák ]
   * Initial release. Closes: #nnnn
     <nnnn is the bug number of your ITP>
 
- -- Vítězslav Dvořák <info@vitexsoftware.cz>  Thu, 07 Sep 2023 16:55:21 +0200
+ -- vitex <info@vitexsoftware.cz>  Sat, 03 May 2025 18:51:38 +0200
