@@ -1,5 +1,7 @@
 # seznamds
 
+![Logo](seznamds.svg?raw=true)
+
 Debian package that contains directory of identificatros of czech DataBoxes
 
 * /var/lib/seznamds/seznam_ds_ovm.xml
