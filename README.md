@@ -1,6 +1,6 @@
 # seznamds
 
-![Logo](seznamds.svg?raw=true)
+![Logo](social-preview.svg?raw=true)
 
 Debian package that contains directory of identificatros of czech DataBoxes
 
