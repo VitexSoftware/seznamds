@@ -20,4 +20,5 @@ override_dh_install:
 	wget -c "https://www.mojedatovaschranka.cz/sds/datafile?format=xml&service=seznam_ds_po"  -O debian/tmp/seznam_ds_po.xml
 	wget -c "https://www.mojedatovaschranka.cz/sds/datafile?format=xml&service=seznam_ds_pfo" -O debian/tmp/seznam_ds_pfo.xml
 	wget -c "https://www.mojedatovaschranka.cz/sds/datafile?format=xml&service=seznam_ds_ovm" -O debian/tmp/seznam_ds_ovm.xml
+	cp seznamds.svg debian/tmp/
 	dh_install
