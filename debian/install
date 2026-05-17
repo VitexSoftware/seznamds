@@ -2,4 +2,5 @@ seznam_ds.xml		var/lib/seznamds
 seznam_ds_po.xml	var/lib/seznamds
 seznam_ds_pfo.xml	var/lib/seznamds
 seznam_ds_ovm.xml	var/lib/seznamds
-seznamds.svg		usr/share/icons/hicolor/scalable/apps
+debian/cz.vitexsoftware.seznamds.metainfo.xml	usr/share/metainfo/
+seznamds.svg		usr/share/icons/hicolor/scalable/apps/

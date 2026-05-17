@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="generic">
+  <id>cz.vitexsoftware.seznamds</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <name>SeznamDS</name>
+  <summary>Directory of Czech DataBox identifiers</summary>
+  <description>
+    <p>
+      SeznamDS provides an up-to-date dataset of Czech DataBox (Datová schránka)
+      identifiers as XML files, sourced from the official Czech government registry.
+      The data covers public authorities (OVM), legal entities (PO), natural persons
+      doing business (PFO), and physical persons.
+    </p>
+    <p>
+      The XML files are installed to <code>/var/lib/seznamds/</code> and are consumed
+      by applications that look up or validate Czech DataBox identifiers, such as
+      accounting software and government e-services integrations.
+    </p>
+  </description>
+  <icon type="stock">seznamds</icon>
+  <developer id="cz.vitexsoftware">
+    <name>VitexSoftware</name>
+  </developer>
+  <url type="homepage">https://github.com/VitexSoftware/seznamds</url>
+  <categories>
+    <category>Science</category>
+    <category>Database</category>
+  </categories>
+</component>
